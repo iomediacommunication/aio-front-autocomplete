@@ -208,10 +208,12 @@ export default {
     },
 
     handleShow() {
+      this.$emit('show');
       this.expanded = true
     },
 
     handleHide() {
+      this.$emit('hide');
       this.expanded = false
       this.resetPosition = true
     },
